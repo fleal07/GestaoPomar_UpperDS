@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GestaoPomarWeb.Models.EspeciesViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Espécies</h1>
+
+<p>
+    <a asp-action="Create">Adicionar +</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoEspecie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoEspecie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.IdEspecie }) |
+                @Html.ActionLink("Detalhar", "Details", new {id=item.IdEspecie}) |
+                @Html.ActionLink("Apagar", "Delete", new {id=item.IdEspecie }, new
+           {
+               onclick = "return confirm('Deseja realmente apagar este registro ?');"
+           })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

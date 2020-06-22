@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-06-22T10:16:21.621886Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "GestaoPomar"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "477acab4-d79e-4eb4-bda3-ce89c98bb24d"
+    }
+  }
+}

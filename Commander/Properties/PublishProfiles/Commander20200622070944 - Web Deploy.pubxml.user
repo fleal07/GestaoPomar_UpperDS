@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASq6RcHZGPESxar+LYM0sIQAAAAACAAAAAAAQZgAAAAEAACAAAAA6RycTdIbdkFbKgjUJREd+TTewYxH915nL1yQ65XJtoQAAAAAOgAAAAAIAACAAAAC0WRWGa8dT34TnrQiMPSUO2opctQXjwybMu0hWs/k9+4AAAABxlSn8UpNYAvfSQ/R2NGsbUQ41aw+BuNQWIt85IPfnj7ra7cWHmWXf/JycBL9eK7w8saMAm6P7KQ+KEsVz2iy3mVv8TN5n6ZYNw8E6HJAfxeZMlC+jBVYdnMxSu+ByMTRmq+hQsy5YX5ZLC2lkx+KL5wQ2PsyeTU9yuwcvMner8kAAAAAJ6KK3dPx1OMOgbfuPIGNjk4AeaFEQqHD0PZmdemSXAmcru19YI9ZYawxxBKb/WuYSXlEcWQQDX5VbqW3dVSkI</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="CommanderConnection">
+      <Value>Data Source=tcp:fleal07.database.windows.net,1433%3bInitial Catalog=GestaoPomar%3bUser Id=fleal07%40fleal07%3bPassword=ea+apesmna16</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Commander.Data.CommanderContext">
+      <Value>Data Source=tcp:fleal07.database.windows.net,1433%3bInitial Catalog=GestaoPomar%3bUser Id=fleal07%40fleal07%3bPassword=ea+apesmna16</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
